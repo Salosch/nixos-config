@@ -13,6 +13,7 @@ in
     # Palettes you save in Noctalia's Settings. Whole folder, so new ones need no line
     # (don't also use programs.noctalia.customPalettes: it can't write into a linked folder).
     "noctalia/palettes".source = link "noctalia/palettes";
+    "noctalia/templates".source = link "noctalia/templates";
 
     # fish: Home Manager writes ~/.config/fish/config.fish itself (it loads your
     # session variables), and fish also reads every file in conf.d, so yours goes there.
