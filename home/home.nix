@@ -25,7 +25,9 @@
     vim
     wget
     curl
-    prismlauncher # Minecraft
+    (prismlauncher.overrideAttrs (old: {
+      qtWrapperArgs = old.qtWrapperArgs ++ [ "--set SDL_VIDEO_DRIVER wayland" ];
+    }))
     mangohud # FPS overlay, Steam launch option: `mangohud %command%`
     vesktop
     mission-center
