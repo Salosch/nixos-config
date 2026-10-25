@@ -31,7 +31,10 @@
     mangohud # FPS overlay, Steam launch option: `mangohud %command%`
     vesktop
     mission-center
+    ffmpeg
+
     pkgs-unstable.fetch
+    pkgs-unstable.linux-wallpaperengine
   ];
 
   # Same cursor in every app (niri sets it too, in config.kdl).

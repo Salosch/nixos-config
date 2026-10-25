@@ -11,7 +11,7 @@ order = [ "default" ]
     concave_edge_corners = false
     end = [ "clipboard", "bluetooth", "volume", "clock", "session" ]
     margin_ends = 0
-    start = [ "launcher", "control-center" ]
+    start = [ "launcher", "control-center", "w-engine-widget" ]
     thickness = 27
 
 [control_center]
@@ -106,6 +106,9 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@HDMI-A-1" ]
         show_unlock_hint = true
         show_weather = true
 
+[plugins]
+enabled = [ "tadomika_ari/w-engine" ]
+
 [shell]
 settings_expand_all_groups = true
 settings_window_translucent = true
@@ -135,13 +138,22 @@ source = "community"
 path = "/nix/store/03006ykkcgjn028icaafd4q87yv62pmj-noctalia-5.3.0/share/noctalia/assets/noctalia-wallpaper.png"
 
 [wallpaper.last]
-path = "/nix/store/03006ykkcgjn028icaafd4q87yv62pmj-noctalia-5.3.0/share/noctalia/assets/noctalia-wallpaper.png"
+path = "/home/milas/.local/share/Steam/steamapps/workshop/content/431960/3796543344/preview.jpg"
+
+[wallpaper.monitors.DP-2]
+path = "/home/milas/.local/share/Steam/steamapps/workshop/content/431960/3796543344/preview.jpg"
+
+[wallpaper.monitors.HDMI-A-1]
+path = "/home/milas/.local/share/Steam/steamapps/workshop/content/431960/3796543344/preview.jpg"
 
 [widget.control-center]
 glyph = "settings"
 
 [widget.launcher]
 glyph = "noctalia"
+
+[widget.w-engine-widget]
+type = "tadomika_ari/w-engine:w-engine-widget"
 
 [widget.workspaces]
 empty_color = "tertiary"
