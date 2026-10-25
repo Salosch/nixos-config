@@ -17,6 +17,11 @@
     # is always prebuilt. No `follows` on purpose: overriding its nixpkgs would
     # change the hash and force a local compile.
     noctalia.url = "github:noctalia-dev/noctalia/cachix";
+
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

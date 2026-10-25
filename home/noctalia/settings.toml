@@ -129,7 +129,7 @@ source = "community"
 
     [theme.templates]
     builtin_ids = [ "btop", "gtk3", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "claude-code", "discord", "prismlauncher", "steam", "fastfetch" ]
+    community_ids = [ "claude-code", "spicetify", "discord", "prismlauncher", "steam", "fastfetch" ]
 
 [wallpaper.default]
 path = "/nix/store/03006ykkcgjn028icaafd4q87yv62pmj-noctalia-5.3.0/share/noctalia/assets/noctalia-wallpaper.png"
