@@ -9,9 +9,9 @@ order = [ "default" ]
     capsule = true
     center = [ "workspaces" ]
     concave_edge_corners = false
-    end = [ "clipboard", "bluetooth", "volume", "clock", "session" ]
+    end = [ "clipboard", "bluetooth", "w-engine-widget", "volume", "clock", "session" ]
     margin_ends = 0
-    start = [ "launcher", "control-center", "w-engine-widget" ]
+    start = [ "launcher", "control-center" ]
     thickness = 27
 
 [control_center]
@@ -128,23 +128,27 @@ settings_window_translucent = true
 [theme]
 builtin = "Dracula"
 community_palette = "Neon Surf"
-source = "community"
+custom_palette = "Velvet Room"
+source = "custom"
 
     [theme.templates]
     builtin_ids = [ "btop", "gtk3", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "claude-code", "spicetify", "discord", "prismlauncher", "steam", "fastfetch" ]
+    community_ids = [ "claude-code", "discord", "prismlauncher", "steam", "fastfetch" ]
 
 [wallpaper.default]
 path = "/nix/store/03006ykkcgjn028icaafd4q87yv62pmj-noctalia-5.3.0/share/noctalia/assets/noctalia-wallpaper.png"
 
 [wallpaper.last]
-path = "/home/milas/.local/share/Steam/steamapps/workshop/content/431960/3796543344/preview.jpg"
+path = "/home/milas/.local/share/Steam/steamapps/workshop/content/431960/911842176/preview.jpg"
 
 [wallpaper.monitors.DP-2]
-path = "/home/milas/.local/share/Steam/steamapps/workshop/content/431960/3796543344/preview.jpg"
+path = "/home/milas/.local/share/Steam/steamapps/workshop/content/431960/911842176/preview.jpg"
 
 [wallpaper.monitors.HDMI-A-1]
-path = "/home/milas/.local/share/Steam/steamapps/workshop/content/431960/3796543344/preview.jpg"
+path = "/home/milas/.local/share/Steam/steamapps/workshop/content/431960/911842176/preview.jpg"
+
+[widget.bluetooth]
+enabled = false
 
 [widget.control-center]
 glyph = "settings"
