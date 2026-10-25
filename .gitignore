@@ -1,0 +1,6 @@
+# build output symlinks from `nix build`
+result
+result-*
+
+# Noctalia's temp file while it saves settings.toml
+home/noctalia/*.tmp

@@ -1,0 +1,13 @@
+# Noctalia v5 settings you write by hand, linked to ~/.config/noctalia/config.toml
+# (home/link.nix). What you change in Noctalia's Settings window goes to settings.toml
+# next to this file instead, and wins over this one.
+# Reference: https://docs.noctalia.dev/noctalia/configuration/
+
+[shell]
+polkit_agent = true # Noctalia shows the password prompt when an app needs admin rights
+
+[theme]
+mode = "dark"
+
+[backdrop]
+enabled = true # blurred wallpaper behind niri's overview (see the layer-rule in niri/config.kdl)
