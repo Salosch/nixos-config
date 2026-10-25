@@ -1,9 +1,16 @@
 # Steam and the tools it launches games with, set up at system level.
 # programs.steam also brings the 32-bit graphics drivers and controller udev rules.
-{ pkgs, username, ... }:
+{ pkgs, inputs ,username, ... }:
+
 {
+
+  nixpkgs.overlays = [ inputs.millennium.overlays.default ];
+
   programs.steam = {
     enable = true;
+    package = pkgs.millennium-steam;
+    remotePlay.openFirewall = true;
+    localNetworkGameTransfers.openFirewall = true;
   };
 
   # Steam launch options: `gamemoderun %command%`, `gamescope -f -- %command%`

@@ -28,6 +28,7 @@
     prismlauncher # Minecraft
     mangohud # FPS overlay, Steam launch option: `mangohud %command%`
     vesktop
+    mission-center
     pkgs-unstable.fetch
   ];
 
