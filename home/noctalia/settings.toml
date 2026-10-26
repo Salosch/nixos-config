@@ -135,9 +135,6 @@ source = "custom"
     builtin_ids = [ "btop", "gtk3", "kcolorscheme", "kitty", "niri", "qt" ]
     community_ids = [ "claude-code", "discord", "prismlauncher", "steam", "fastfetch" ]
 
-
-# Spotify's colors: Spotify's colors.css links to output_path (home/spicetify/spicetify.nix).
-# Use this instead of the community "spicetify" template, which needs a writable Spotify.
 [theme.templates.user.spotify]
 input_path = "$XDG_CONFIG_HOME/noctalia/templates/spotify.css"
 output_path = "$XDG_CONFIG_HOME/spicetify/noctalia.css"
