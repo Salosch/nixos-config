@@ -4,10 +4,12 @@ config_version = 15
 order = [ "default" ]
 
     [bar.default]
+    background_opacity = 0.69999998435378075
     border = "primary"
     border_width = 0.5
     capsule = true
     center = [ "workspaces" ]
+    compositor_blur = false
     concave_edge_corners = false
     end = [ "clipboard", "bluetooth", "w-engine-widget", "volume", "clock", "session" ]
     margin_ends = 0
@@ -135,9 +137,9 @@ source = "custom"
     builtin_ids = [ "btop", "gtk3", "kcolorscheme", "kitty", "niri", "qt" ]
     community_ids = [ "claude-code", "discord", "prismlauncher", "steam", "fastfetch" ]
 
-[theme.templates.user.spotify]
-input_path = "$XDG_CONFIG_HOME/noctalia/templates/spotify.css"
-output_path = "$XDG_CONFIG_HOME/spicetify/noctalia.css"
+        [theme.templates.user.spotify]
+        input_path = "$XDG_CONFIG_HOME/noctalia/templates/spotify.css"
+        output_path = "$XDG_CONFIG_HOME/spicetify/noctalia.css"
 
 [wallpaper.default]
 path = "/nix/store/03006ykkcgjn028icaafd4q87yv62pmj-noctalia-5.3.0/share/noctalia/assets/noctalia-wallpaper.png"

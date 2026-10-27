@@ -32,6 +32,7 @@
     vesktop
     mission-center
     ffmpeg
+    trash-cli
 
     pkgs-unstable.fetch
     pkgs-unstable.linux-wallpaperengine
