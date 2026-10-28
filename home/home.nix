@@ -34,6 +34,7 @@
     ffmpeg
     trash-cli
     filezilla
+    simple-scan
 
     pkgs-unstable.fetch
     pkgs-unstable.linux-wallpaperengine
