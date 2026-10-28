@@ -18,21 +18,22 @@
 
   home.packages = with pkgs; [
     firefox
-    nautilus # file manager (niri also uses it for file-open dialogs)
-    kdePackages.kate # text editor
-    btop
+    nautilus
+    kdePackages.kate
     fastfetch
-    vim
     wget
     curl
+
     (prismlauncher.overrideAttrs (old: {
       qtWrapperArgs = old.qtWrapperArgs ++ [ "--set SDL_VIDEO_DRIVER wayland" ];
     }))
-    mangohud # FPS overlay, Steam launch option: `mangohud %command%`
+
+    mangohud
     vesktop
     mission-center
     ffmpeg
     trash-cli
+    filezilla
 
     pkgs-unstable.fetch
     pkgs-unstable.linux-wallpaperengine
