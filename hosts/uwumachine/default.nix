@@ -12,5 +12,6 @@
     ../../modules/fish
     ../../modules/gaming
     ../../modules/flatpak
+    ../../modules/printing
   ];
 }
