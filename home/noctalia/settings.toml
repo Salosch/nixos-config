@@ -108,6 +108,9 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@HDMI-A-1" ]
         show_unlock_hint = true
         show_weather = true
 
+[notification]
+background_opacity = 0.69999998435378075
+
 [plugins]
 enabled = [ "tadomika_ari/w-engine" ]
 
