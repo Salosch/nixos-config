@@ -11,9 +11,9 @@ order = [ "default" ]
     center = [ "workspaces" ]
     compositor_blur = false
     concave_edge_corners = false
-    end = [ "clipboard", "bluetooth", "w-engine-widget", "volume", "clock", "session" ]
+    end = [ "tray", "w-engine-widget", "volume", "clock" ]
     margin_ends = 0
-    start = [ "launcher", "control-center" ]
+    start = [ "launcher" ]
     thickness = 27
 
 [control_center]
