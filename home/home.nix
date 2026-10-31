@@ -40,11 +40,13 @@
     pkgs-unstable.linux-wallpaperengine
   ];
 
-  # Same cursor in every app (niri sets it too, in config.kdl).
   home.pointerCursor = {
     enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Ice";
+    package = pkgs.runCommand "catppuccin-velvet-deep" { } ''
+      mkdir -p $out/share/icons
+      tar -xzf ${./cursor/Catppuccin-Velvet-Deep.tar.gz} -C $out/share/icons
+    '';
+    name = "Catppuccin-Velvet-Deep";
     size = 24;
     gtk.enable = true;
   };

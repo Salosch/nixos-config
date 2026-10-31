@@ -60,7 +60,7 @@ layout {
 prefer-no-csd
 
 cursor {
-    xcursor-theme "Bibata-Modern-Ice"
+    xcursor-theme "Catppuccin-Velvet-Deep"
     xcursor-size 24
 }
 
