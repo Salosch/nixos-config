@@ -1,4 +1,5 @@
-function full-rebuild --description 'Update the flake inputs in ~/nixos, then rebuild'
-    nix flake update --flake ~/nixos
+function full-rebuild --description 'Go to ~/nixos, update the flake inputs, then rebuild'
+    cd ~/nixos
+    and nix flake update
     and rebuild $argv
 end
