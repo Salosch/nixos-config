@@ -13,7 +13,7 @@ order = [ "default" ]
     concave_edge_corners = false
     end = [ "tray", "w-engine-widget", "volume", "clock" ]
     margin_ends = 0
-    start = [ "launcher" ]
+    start = [ "launcher", "battery_2" ]
     thickness = 27
 
 [control_center]
@@ -112,7 +112,7 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@HDMI-A-1" ]
 background_opacity = 0.69999998435378075
 
 [plugins]
-enabled = [ "tadomika_ari/w-engine" ]
+enabled = [ "tadomika_ari/w-engine", "detluck/razer" ]
 
 [shell]
 settings_expand_all_groups = true
@@ -155,6 +155,9 @@ path = "/home/milas/.local/share/Steam/steamapps/workshop/content/431960/9118421
 
 [wallpaper.monitors.HDMI-A-1]
 path = "/home/milas/.local/share/Steam/steamapps/workshop/content/431960/911842176/preview.jpg"
+
+[widget.battery_2]
+type = "detluck/razer:battery"
 
 [widget.bluetooth]
 enabled = false

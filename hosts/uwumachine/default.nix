@@ -13,5 +13,6 @@
     ../../modules/gaming
     ../../modules/flatpak
     ../../modules/printing
+    ../../modules/openrazer
   ];
 }
