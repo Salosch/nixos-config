@@ -1,13 +1,7 @@
-# Your user: apps without config, fonts, cursor.
-#
-# Rule of thumb:
-#   app needs no config         → one line in home.packages below
-#   app needs config / files    → its own folder in home/ (listed in home/default.nix),
-#                                 its config file linked in home/link.nix
-#   app needs a newer version   → pkgs-unstable.<name> instead of pkgs.<name>
 {
   pkgs,
   pkgs-unstable,
+  inputs,
   username,
   osConfig,
   ...
@@ -38,6 +32,8 @@
 
     pkgs-unstable.fetch
     pkgs-unstable.linux-wallpaperengine
+
+    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.claude-desktop
   ];
 
   home.pointerCursor = {

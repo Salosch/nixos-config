@@ -2,20 +2,16 @@
   description = "Meister's NixOS config: flakes + Home Manager + niri + Noctalia";
 
   inputs = {
-    # Stable NixOS. flake.lock pins the exact commit until you run `nix flake update`.
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
 
-    # Unstable, only for the apps that need it (see pkgs-unstable below).
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-26.05"; # must match the NixOS release
+      url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Noctalia v5. It brings its own pinned nixos-unstable, and the `cachix` branch
-    # is always prebuilt. No `follows` on purpose: overriding its nixpkgs would
-    # change the hash and force a local compile.
+
     noctalia.url = "github:noctalia-dev/noctalia/cachix";
 
     spicetify-nix = {
@@ -24,6 +20,8 @@
     };
 
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+
+    llm-agents.url = "github:numtide/llm-agents.nix";
 
   };
 
