@@ -23,13 +23,13 @@
     }))
 
     mangohud
-    vesktop
     mission-center
     ffmpeg
     trash-cli
     filezilla
     simple-scan
 
+    pkgs-unstable.vesktop
     pkgs-unstable.fetch
     pkgs-unstable.linux-wallpaperengine
 
