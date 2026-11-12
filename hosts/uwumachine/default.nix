@@ -14,5 +14,6 @@
     ../../modules/flatpak
     ../../modules/printing
     ../../modules/openrazer
+    ../../modules/ydotool
   ];
 }

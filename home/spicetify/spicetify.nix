@@ -7,10 +7,9 @@
 
 let
   spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system};
-
-
   noctaliaColors = "${config.xdg.configHome}/spicetify/noctalia.css";
 in
+
 {
   imports = [ inputs.spicetify-nix.homeManagerModules.default ];
 

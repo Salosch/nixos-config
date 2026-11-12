@@ -10,5 +10,6 @@
     ./kitty
     ./git
     ./spicetify
+    ./autoclick
   ];
 }

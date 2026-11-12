@@ -1,0 +1,3 @@
+{
+  imports = [ ./ydotool.nix ];
+}

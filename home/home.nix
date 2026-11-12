@@ -17,16 +17,10 @@
     fastfetch
     wget
     curl
-
-    (prismlauncher.overrideAttrs (old: {
-      qtWrapperArgs = old.qtWrapperArgs ++ [ "--set SDL_VIDEO_DRIVER wayland" ];
-    }))
-
     mangohud
     mission-center
     ffmpeg
     trash-cli
-    filezilla
     simple-scan
 
     pkgs-unstable.vesktop
@@ -34,6 +28,11 @@
     pkgs-unstable.linux-wallpaperengine
 
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.claude-desktop
+
+    (prismlauncher.overrideAttrs (old: {
+      qtWrapperArgs = old.qtWrapperArgs ++ [ "--set SDL_VIDEO_DRIVER wayland" ];
+    }))
+
   ];
 
   home.pointerCursor = {
@@ -47,20 +46,11 @@
     gtk.enable = true;
   };
 
-  # Without this, `gtk.enable` in the cursor block above does nothing: Home Manager
-  # only writes GTK's cursor settings (settings.ini files + dconf keys) when it's on.
   gtk.enable = true;
-
-  # Plasma (the fallback session) replaces ~/.gtkrc-2.0 with its own file at every
-  # login. Without this, a rebuild after a Plasma login fails as soon as an older
-  # .hm-backup copy is in the way. Delete this line when you drop Plasma.
   gtk.gtk2.force = true;
-  # Same for GTK 3/4's settings.ini (no gtk3/gtk4 switch exists, so set it on the files).
-  # Safe with niri and Noctalia: neither writes these files; Noctalia's GTK theming
-  # uses gtk.css and noctalia.css instead. Delete these too when you drop Plasma.
+
   xdg.configFile."gtk-3.0/settings.ini".force = true;
   xdg.configFile."gtk-4.0/settings.ini".force = true;
 
-  # Follows system.stateVersion in hosts/<hostname>/configuration.nix.
   home.stateVersion = osConfig.system.stateVersion;
 }

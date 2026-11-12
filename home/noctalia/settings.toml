@@ -1,4 +1,4 @@
-config_version = 19
+config_version = 20
 
 [bar]
 order = [ "default" ]
@@ -111,15 +111,15 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@HDMI-A-1" ]
 [notification]
 background_opacity = 0.69999998435378075
 
-[notification.filter.razer]
-match         = "noctalia"
-match_content = "^(Razer|OpenRazer)"
-show_toast    = false
-play_sound    = false
+    [notification.filter.razer]
+    match = "noctalia"
+    match_content = "^(Razer|OpenRazer)"
+    play_sound = false
+    show_toast = false
 
-[notification.filter.vesktop]
-match      = "vesktop"
-play_sound = false
+    [notification.filter.vesktop]
+    match = "vesktop"
+    play_sound = false
 
 [plugin_settings."detluck/razer"]
 low_battery_threshold = 20
