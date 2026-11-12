@@ -11,4 +11,9 @@
   imports = [ inputs.noctalia.homeModules.default ];
 
   programs.noctalia.enable = true;
+
+    xdg.configFile."systemd/user/app-niri-noctalia-.scope.d/stop-timeout.conf".text = ''
+    [Scope]
+    TimeoutStopSec=2s
+  '';
 }

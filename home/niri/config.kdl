@@ -126,6 +126,7 @@ binds {
     Mod+B hotkey-overlay-title="Browser" {spawn "firefox";}
     Mod+K hotkey-overlay-title="Text Editor" {spawn "kate";}
     Ctrl+Shift+Escape hotkey-overlay-title="Mission-Center" {spawn "missioncenter";}
+    Mod+F5 repeat=false hotkey-overlay-title="Autoclicker on/off" { spawn "autoclick" "2"; }
 
     Mod+Space hotkey-overlay-title="App launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+Comma hotkey-overlay-title="Noctalia settings" { spawn-sh "noctalia msg settings-toggle"; }
