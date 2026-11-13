@@ -124,8 +124,11 @@ background_opacity = 0.69999998435378075
 [plugin_settings."detluck/razer"]
 low_battery_threshold = 20
 
+[plugin_settings."yuuto/calculator"]
+panel_layer = "top"
+
 [plugins]
-enabled = [ "tadomika_ari/w-engine", "detluck/razer" ]
+enabled = [ "tadomika_ari/w-engine", "detluck/razer", "yuuto/calculator" ]
 
 [shell]
 settings_expand_all_groups = true

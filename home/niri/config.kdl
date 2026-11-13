@@ -125,6 +125,8 @@ binds {
     Mod+E hotkey-overlay-title="Files" { spawn "nautilus"; }
     Mod+B hotkey-overlay-title="Browser" {spawn "firefox";}
     Mod+K hotkey-overlay-title="Text Editor" {spawn "kate";}
+    Mod+C hotkey-overlay-title="Calculator" { spawn-sh "noctalia msg panel-toggle yuuto/calculator:panel";}
+
     Ctrl+Shift+Escape hotkey-overlay-title="Mission-Center" {spawn "missioncenter";}
     Ctrl+F5 repeat=false hotkey-overlay-title="Autoclicker on/off" { spawn "autoclick" "2"; }
 
@@ -203,7 +205,7 @@ binds {
     Mod+F       { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
     Mod+M       { maximize-window-to-edges; }
-    Mod+C       { center-column; }
+    Mod+Shift+C       { center-column; }
 
     Mod+Minus       { set-column-width "-10%"; }
     Mod+Plus        { set-column-width "+10%"; }
