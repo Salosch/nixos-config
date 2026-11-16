@@ -22,6 +22,7 @@
     ffmpeg
     trash-cli
     simple-scan
+    cmatrix
 
     pkgs-unstable.vesktop
     pkgs-unstable.fetch
