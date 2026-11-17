@@ -23,6 +23,7 @@
     trash-cli
     simple-scan
     cmatrix
+    cava
 
     pkgs-unstable.vesktop
     pkgs-unstable.fetch

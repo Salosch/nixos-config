@@ -116,6 +116,17 @@ window-rule {
     default-floating-position x=10 y=10 relative-to="bottom-right"
 }
 
+window-rule {
+    match app-id=r#"^org\.gnome\.Nautilus$"#
+
+    background-effect {
+        blur true
+        xray false
+    }
+
+    draw-border-with-background false
+}
+
 // ── Key bindings (German layout) ──────────────────────────────────────────
 binds {
     Mod+Shift+ssharp { show-hotkey-overlay; }

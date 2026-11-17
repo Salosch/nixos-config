@@ -153,7 +153,7 @@ custom_palette = "Velvet Room"
 source = "custom"
 
     [theme.templates]
-    builtin_ids = [ "btop", "gtk3", "kcolorscheme", "kitty", "niri", "qt" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
     community_ids = [ "claude-code", "discord", "prismlauncher", "steam", "fastfetch" ]
 
         [theme.templates.user.spotify]
