@@ -1,0 +1,10 @@
+@import url("noctalia.css");
+
+.nautilus-window {
+    --window-bg-color: color-mix(in srgb, @window_bg_color 70%, transparent);
+    --view-bg-color: color-mix(in srgb, @view_bg_color 70%, transparent);
+    --sidebar-bg-color: transparent;
+    --sidebar-backdrop-color: transparent;
+    --headerbar-bg-color: transparent;
+    --headerbar-backdrop-color: transparent;
+}
