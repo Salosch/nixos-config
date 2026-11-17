@@ -86,6 +86,21 @@ layer-rule {
     place-within-backdrop true
 }
 
+layer-rule {
+    match namespace="^noctalia-(bar|notification|dock|panel|attached-panel|osd).*"
+    background-effect {
+        xray false
+    }
+}
+
+layer-rule {
+    match namespace="^noctalia-panel$"
+    background-effect {
+        blur false
+    }
+    // opacity 0.9   // optional, see below
+}
+
 // Noctalia's settings window opens floating.
 window-rule {
     match app-id="dev.noctalia.Noctalia"

@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
 
   programs.niri.enable = true;
@@ -18,6 +18,9 @@
   services.power-profiles-daemon.enable = true;
 
   security.rtkit.enable = true;
+
+
+  fonts.packages = [ pkgs.nerd-fonts.jetbrains-mono ];
 
   services.pipewire = {
     enable = true;

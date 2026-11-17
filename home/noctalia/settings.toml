@@ -4,17 +4,42 @@ config_version = 20
 order = [ "default" ]
 
     [bar.default]
-    background_opacity = 0.69999998435378075
-    border = "primary"
-    border_width = 0.5
-    capsule = true
-    center = [ "workspaces" ]
+    background_opacity = 0.0
+    capsule_thickness = 1.0
+    center = [ "group:middle" ]
     compositor_blur = false
     concave_edge_corners = false
-    end = [ "tray", "w-engine-widget", "volume", "clock" ]
+    end = [ "group:right" ]
+    margin_edge = 6
     margin_ends = 0
-    start = [ "launcher", "battery_2" ]
+    padding = 6
+    shadow = false
+    start = [ "group:left" ]
     thickness = 27
+
+        [[bar.default.capsule_group]]
+        border = "primary"
+        border_width = 0.5
+        fill = "surface"
+        id = "left"
+        members = [ "launcher", "battery_2" ]
+        opacity = 0.69999999999999996
+
+        [[bar.default.capsule_group]]
+        border = "primary"
+        border_width = 0.5
+        fill = "surface"
+        id = "middle"
+        members = [ "workspaces" ]
+        opacity = 0.69999999999999996
+
+        [[bar.default.capsule_group]]
+        border = "primary"
+        border_width = 0.5
+        fill = "surface"
+        id = "right"
+        members = [ "tray", "w-engine-widget", "volume", "clock" ]
+        opacity = 0.69999999999999996
 
 [control_center]
 hidden_tabs = [ "power", "network" ]
@@ -131,17 +156,24 @@ panel_layer = "top"
 enabled = [ "tadomika_ari/w-engine", "detluck/razer", "yuuto/calculator" ]
 
 [shell]
+corner_radius_scale = 0.88
+font_family = "JetBrainsMono Nerd Font"
 settings_expand_all_groups = true
 settings_window_translucent = true
 
     [shell.launcher]
     auto_paste = "off"
-    search_position = "top"
+    colorize_icons = true
+    search_position = "bottom"
     show_app_origin_indicator = false
+    show_navigation_labels = false
+    show_session_button = false
+    show_settings_button = false
+    transparency_mode = "glass"
 
     [shell.panel]
     control_center_placement = "floating"
-    transparency_mode = "soft"
+    transparency_mode = "glass"
 
     [shell.screenshot]
     directory = "/home/milas/Pictures/screenshots"
