@@ -25,6 +25,9 @@
     cmatrix
     cava
 
+    #devtools
+    python3
+
     pkgs-unstable.vesktop
     pkgs-unstable.fetch
     pkgs-unstable.linux-wallpaperengine

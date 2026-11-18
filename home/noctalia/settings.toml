@@ -153,14 +153,14 @@ low_battery_threshold = 20
 panel_layer = "top"
 
 [plugins]
-enabled = [ "tadomika_ari/w-engine", "detluck/razer", "yuuto/calculator" ]
+enabled = [ "tadomika_ari/w-engine", "detluck/razer", "yuuto/calculator", "thaer99ob/default-apps", "vn1k/icons" ]
 
 [shell]
+avatar_path = "~/Pictures/profile-pics/milas1.png"
 corner_radius_scale = 0.88
 font_family = "JetBrainsMono Nerd Font"
 settings_expand_all_groups = true
 settings_window_translucent = true
-avatar_path = "~/Pictures/profile-pics/milas1.png"
 
     [shell.launcher]
     auto_paste = "off"
