@@ -6,11 +6,12 @@
 #   settings.toml  what Noctalia's Settings window writes (every change lands here at once)
 #   palettes/      colour palettes you save in its Settings
 # settings.toml loads last, so it wins when both files set the same thing.
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 {
   imports = [ inputs.noctalia.homeModules.default ];
 
   programs.noctalia.enable = true;
+  programs.noctalia.extraPackages = [ pkgs.glib ];
 
     xdg.configFile."systemd/user/app-niri-noctalia-.scope.d/stop-timeout.conf".text = ''
     [Scope]
