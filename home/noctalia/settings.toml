@@ -55,7 +55,6 @@ concave_edge_corners = false
 enabled = true
 icon_size = 38
 item_spacing = 10
-launcher_position = "start"
 main_axis_padding = 13
 reserve_space = false
 show_dots = true
