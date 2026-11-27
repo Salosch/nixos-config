@@ -1,4 +1,3 @@
-# Nix itself and cleanup. No apps live here.
 { ... }:
 {
   nix.settings = {
@@ -20,13 +19,11 @@
     ];
   };
 
-  # Delete generations older than two weeks, once a week.
   nix.gc = {
     automatic = true;
     dates = "weekly";
     options = "--delete-older-than 14d";
   };
 
-  # Allows Steam, Discord, ... Applies to Home Manager packages too.
   nixpkgs.config.allowUnfree = true;
 }
