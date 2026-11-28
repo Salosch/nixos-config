@@ -49,10 +49,14 @@
        minus = G-minus
        rightbrace = G-rightbrace
        m = G-m
+       z = G-102nd
+       x = 102nd
+
+     [control+alt+shift]
+       x = S-102nd
      '';
     };
   };
-
 
   console.keyMap = "de";
 

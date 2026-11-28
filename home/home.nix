@@ -24,6 +24,7 @@
     simple-scan
     cmatrix
     cava
+    tealdeer
 
     #devtools
     python3
